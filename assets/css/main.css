@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+    margin: 0;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-nav{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.mr-sm{
+    margin-right: 50px;
+}
+
+#home-hero{
+    display: flex;
+    background-image: url('../img/playa-balandra.jpg');
+    background-color: chocolate;
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero-text{
+    align-items:flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+nombre{
+    font-size: xx-large;
+}
