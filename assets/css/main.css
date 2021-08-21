@@ -1,3 +1,5 @@
+@import url("hamburger_menu.css");
+
 @font-face {
     font-family: Teko;
     src: url('../fonts/Teko/Teko-Regular.ttf');
@@ -34,11 +36,28 @@ nav{
     margin-right: 50px;
 }
 
+.shaded-text{
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.name{
+    font-size: 50px;
+}
+
+.individual-videos{
+    margin: 5%;
+}
+
+.image{
+    
+}
+
 #home-hero{
     display: flex;
     height: 500px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -55,15 +74,6 @@ nav{
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
-.shaded-text{
-    color: black;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-}
-
-.name{
-    font-size: 50px;
-}
-
 #videos{
     display: flex;
     flex-direction: column;
@@ -77,11 +87,7 @@ nav{
     align-items: center;
 }
 
-.individual-videos{
-    margin: 5%;
-}
-
-@media (min-width: 500px) and (max-width: 1024px){
+@media (min-width: 320px) and (max-width: 1024px){
     .home-nav{
     
     }
@@ -94,6 +100,4 @@ nav{
     #videos{
         display: none;
     }
-
-
 }
