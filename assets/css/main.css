@@ -1,15 +1,27 @@
+@font-face {
+    font-family: Teko;
+    src: url('../fonts/Teko/Teko-Regular.ttf');
+}
+
 body{
-    background-color: aqua;
+    background-image: url('../img/turquesa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Teko;
     margin: 0;
 }
 
 nav{
     height: 80px;
     width: 100%;
-    background-color: brown;
+    background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
 }
 
 .text-nav{
@@ -24,12 +36,16 @@ nav{
 
 #home-hero{
     display: flex;
-    background-image: url('../img/playa-balandra.jpg');
-    background-color: chocolate;
     height: 500px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+#home-hero img{
+    height: 30%;
+    width: 40%;
+    margin: 30%;
 }
 
 #hero-text{
@@ -39,6 +55,45 @@ nav{
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
+.shaded-text{
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
 .name{
     font-size: 50px;
+}
+
+#videos{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+    align-items: center;
+}
+
+#mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individual-videos{
+    margin: 5%;
+}
+
+@media (min-width: 500px) and (max-width: 1024px){
+    .home-nav{
+    
+    }
+
+    #home-hero{
+        flex-wrap: wrap;
+        margin: 80px 0 50vh 0;
+    }
+
+    #videos{
+        display: none;
+    }
+
+
 }
