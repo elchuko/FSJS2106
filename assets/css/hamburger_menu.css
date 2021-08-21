@@ -25,7 +25,7 @@ li{
 .hamburgerlines{
     width: 40px;
     height: 32px;
-    position: absolute;
+    position: top;
     top: 8px;
     left: 7px;
     z-index: 2;
@@ -57,8 +57,9 @@ li{
     padding-bottom: 1rem;
     max-width: 400px;
     width: 90%;
-    height: 100vh;
+    height: 10vh;
     overflow: scroll;
+    display: none;
 }
 
 .menu-items li{
